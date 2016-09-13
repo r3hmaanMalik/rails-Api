@@ -1,0 +1,13 @@
+curl -d 'recomendation[prdname]=ip7&recomendation[comname]=apple' 'http://localhost:3000/recomendations'
+curl -d 'recomendation[prdname]=fucker&recomendation[comname]=microsoft' 'http://localhost:3000/recomendations'
+curl -d 'recomendation[prdname]=cheeper&recomendation[comname]=hawauiw' 'http://localhost:3000/recomendations'
+curl -d 'recomendation[prdname]=3310&recomendation[comname]=nokia' 'http://localhost:3000/recomendations'
+curl -d 'recomendation[prdname]=bad&recomendation[comname]=lenovo' 'http://localhost:3000/recomendations'
+curl -d 'recomendation[prdname]=envy&recomendation[comname]=Hp' 'http://localhost:3000/recomendations'
+curl -d 'recomendation[prdname]=g6&recomendation[comname]=nexus' 'http://localhost:3000/recomendations'
+curl -d 'recomendation[prdname]=waterProff&recomendation[comname]=ZTE' 'http://localhost:3000/recomendations'
+
+
+curl -x DELETE http://localhost:3000/recomendations/1
+
+curl -X PUT -d'recomendation[prdname]=waterProff&recomendation[comname]=ZTE' 'http://localhost:3000/recomendations/3'
