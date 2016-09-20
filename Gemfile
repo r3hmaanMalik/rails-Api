@@ -7,7 +7,13 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 #gem 'pg', '~> 0.17.1'
-gem 'postgres-pr', '~> 0.7.0'
+
+group :production do 
+gem 'pg', '~> 0.18.4'
+end
+group :development do 
+gem 'sqlite3' 
+end
 
 
 
